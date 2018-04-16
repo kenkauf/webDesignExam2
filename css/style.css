@@ -1,3 +1,22 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 .photo {
-  width: 50%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+
+.photo img {
+
+  width: 100%;
+  /* margin: 10%; */
+  border:10px solid blue;
+  padding: 5%;
+}
+
+#second-image {
+  margin: 0 auto;
 }

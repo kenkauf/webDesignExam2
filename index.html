@@ -2,16 +2,38 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
   <link rel="stylesheet" href="css/style.css">
+
   <title>Document</title>
 </head>
-<body>
+<body style="background-image:url('images/tic-tac-toe.png')">
   <h1>Kennedy Kaufman</h1>
-  <div class='photo'>
-    <img src='images/examPic.JPG' alt='Photo of colleen'>
+  <div class='row'>
+    <div class='col-lg-6 photo' id='first-image'>
+      <img src='images/examPic.JPG' alt='Photo of colleen'>
+    </div>
+    <div class='col-lg-6 photo' id='second-image'>
+      <img src='images/UMSI-logo.jpg' alt='UMSI logo'>
+    </div>
   </div>
-  <div class='photo'>
-    <img src='images/UMSI-logo.jpg' alt='UMSI logo'>
-  </div>
+
+  <button class='hide-button'>HIDE</button>
+
+  <button class='show-button'>SHOW</button>
+
+  <script>
+    $(document).ready(() => {
+      $('.hide-button').on('click', () => {
+        $('#first-image').hide();
+      });
+
+      $('.show-button').on('click', () => {
+        $('#first-image').show();
+      });
+    });
+  </script>
 </body>
 </html>
